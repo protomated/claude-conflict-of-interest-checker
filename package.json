@@ -1,0 +1,15 @@
+{
+  "name": "conflict-of-interest-checker",
+  "version": "1.0.0",
+  "description": "Conflict-of-Interest Checker — Claude Desktop plugin. Fuzzy-matches new-matter party names against your existing client/matter list — accounting for nicknames, entity-suffix variations, and misspellings — and returns a structured possible-conflict report. Never clears or declines a matter; the attorney makes every conflict determination.",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate-plugin.mjs plugin",
+    "pack": "rm -f /tmp/conflict-of-interest-checker.zip && (cd plugin && zip -r /tmp/conflict-of-interest-checker.zip . -x '*.DS_Store' 'node_modules/*' '*/node_modules/*' 'package-lock.json') && mv /tmp/conflict-of-interest-checker.zip ./conflict-of-interest-checker-v$npm_package_version.zip",
+    "checksum": "sha256sum conflict-of-interest-checker-v$npm_package_version.zip | tee conflict-of-interest-checker-v$npm_package_version.zip.sha256",
+    "build": "npm run validate && npm run pack && npm run checksum",
+    "release": "npm run build && gh release create v$npm_package_version conflict-of-interest-checker-v$npm_package_version.zip conflict-of-interest-checker-v$npm_package_version.zip.sha256 --title \"v$npm_package_version\" --notes-file RELEASE.md",
+    "clean": "rm -f ./*.zip ./*.zip.sha256",
+    "tree": "find plugin -type f -not -path '*/node_modules/*' | sort"
+  }
+}

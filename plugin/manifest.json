@@ -1,0 +1,16 @@
+{
+  "manifest_version": "0.2",
+  "name": "conflict-of-interest-checker",
+  "display_name": "Conflict-of-Interest Checker for Law Firms",
+  "version": "1.0.0",
+  "description": "One skill: /conflict-check. Fuzzy-matches new-matter party names against your existing client/matter list — accounting for nicknames, entity-suffix variations, and misspellings — and returns a structured possible-conflict report. Never clears or declines a matter; the attorney makes every conflict determination.",
+  "author": {
+    "name": "Protomated",
+    "url": "https://protomated.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protomated/claude-conflict-of-interest-checker"
+  },
+  "license": "Apache-2.0"
+}

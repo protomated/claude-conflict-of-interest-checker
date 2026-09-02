@@ -1,0 +1,5 @@
+node_modules/
+*.zip
+*.zip.sha256
+.mcp.json
+.DS_Store

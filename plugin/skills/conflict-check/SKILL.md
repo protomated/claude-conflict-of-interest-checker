@@ -2,6 +2,9 @@
 name: conflict-check
 description: Fuzzy-match new-matter party names against your existing client/matter list — attached as a workspace folder — accounting for nicknames, entity-suffix variations, and misspellings. Returns a structured possible-conflict report rated by confidence. Never clears or declines a matter; the attorney makes every conflict determination. Use before opening any new matter.
 argument-hint: "[new party names] — [path to client/matter list, if not already attached]"
+last_verified: 2026-09-29
+freshness_window: 12 months
+freshness_category: procedural
 ---
 
 # /conflict-check — Conflict-of-Interest Checker

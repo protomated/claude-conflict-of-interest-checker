@@ -1,6 +1,6 @@
-# Conflict-of-Interest Checker v1.0.1
+# Conflict-of-Interest Checker
 
-Adds Legal Builder Hub freshness frontmatter (`freshness_category: procedural`). No functional changes.
+Confirmed working in ChatGPT Desktop in addition to Claude Desktop — attach your client list directly to the conversation since ChatGPT has no Filesystem connector. Removed the hardcoded "(Claude Desktop)" wording from the skill's own output footer.
 
 ## What's included
 

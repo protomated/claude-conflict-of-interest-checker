@@ -4,6 +4,8 @@ A Claude Desktop plugin for solo and small-firm attorneys. One skill (`/conflict
 
 **Distributed by [Protomated](https://protomated.com) as a free download.**
 
+**Works with:** Claude Desktop and ChatGPT Desktop.
+
 ---
 
 ## ⚠️ Required: Read This Before You Install
@@ -33,6 +35,10 @@ This plugin reads only the text or workspace folder you explicitly paste or atta
 ### Step 2 — Verify
 
 Open a new Claude Desktop chat. Type `/skills`. You should see `/conflict-check` listed. Run it to start.
+
+### Using this in ChatGPT Desktop
+
+This skill also works in ChatGPT Desktop. Install the plugin the same way (Settings → Apps & Connectors → Plugins → Upload plugin archive), then attach your client list directly to the conversation — ChatGPT doesn't have a persistent Filesystem connector, so attach the file each time instead of connecting a folder once.
 
 ---
 
